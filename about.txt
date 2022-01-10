@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 I gave access to my repository and created a the file louisa.txt.
 =======
+<<<<<<< HEAD
 I had quite a few issues with pushing and pulling, so we both learned much from my mistakes..
->>>>>>> 85cca98a66b729c4babfc6d887d375ff6c5073ab
+
