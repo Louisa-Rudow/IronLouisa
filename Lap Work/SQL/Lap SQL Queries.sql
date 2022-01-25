@@ -31,22 +31,21 @@ select account_id, amount from loan order by account_id limit 5
 select account_id from loan where duration = 60 order by amount limit 5
 
 -- Query 8
--- What are the unique values of k_symbol in the order table?
--- Note: There shouldn't be a table name order, since order is reserved from the ORDER BY clause. You have to use backticks to escape the order table name.
-
+-- What are the unique values of k_symbol in the order table? Note: There shouldn't be a table name order, since order is reserved from the ORDER BY clause. You have to use backticks to escape the order table name.
 select distinct k_symbol from `order`order by k_symbol
 
 -- Query 9
 -- In the order table, what are the order_ids of the client with the account_id 34?
-
 select order_id from `order` where account_id = 34
 
 -- Query 10
 -- In the order table, which account_ids were responsible for orders between order_id 29540 and order_id 29560 (inclusive)?
 select distinct account_id from `order` where order_id >= 29540 AND order_id <=29560
+-- between function
 
 -- Query 11
 -- In the order table, what are the individual amounts that were sent to (account_to) id 30067122?
+
 select amount from `order` where account_to = 30067122
 
 -- Query 12
